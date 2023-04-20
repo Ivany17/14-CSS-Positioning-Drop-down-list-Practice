@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 300vh;
+}
+
+.wrapper-out {
+    width: 80%;
+    height: 700px;
+    margin: 20px auto;
+    background-color: blueviolet;
+}
+.wrapper{
+    width: 80%;
+    height: 700px;
+    margin: 20px auto;
+    background-color: pink;
+}
+.inner {
+    padding: 10px;
+    background-color: chartreuse;
+    font-size: 2em;
+    z-index: 10;
+}
+.sizes {
+    width: 100px;
+    height: 100px;
+    border: 3px solid #000;
+}
+
+/* .position {
+    position: relative;
+    top: 100px;
+    left: 100px;
+} */
+/* .position {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+} */
+
+/* .fixed {
+    position: fixed;
+}
+.top {
+    top: 0;
+}
+.left {
+    left: 0;
+}
+.right {
+    right: 0;
+}
+.bottom {
+    bottom: 0;
+} */
+
+.relative {
+    position: relative;
+}
+.position {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    background-color: blue;
+    /* top: -100vh; */
+}
+
+/* PRACTICE Drown-drop list 08.09.21 */
+ul {
+    margin: 0;
+    padding:0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav-list {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 0px;
+}
+
+.list-item {
+    display: inline-block;
+    background-color: teal;
+    color:white;
+    border: 1px solid rgb(1, 90, 90);
+    position: relative;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.link {
+    display: inline-block;
+    padding: 10px 30px;
+}
+
+.sub-nav-list {
+    position: absolute;
+    left:0;
+    right: 0;
+    display: none;
+}
+
+.sub-list-item {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.list-item:hover {
+    background-color: rgb(1, 90, 90);
+}
+
+.list-item:hover>.sub-nav-list {
+    display: block;
+}
+
+.sub-dress-list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    display: none;
+}
+
+.sub-dress-item {
+    display: block;
+    text-align: center;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.dress-item {
+    display: inline-block;
+    background-color: teal;
+    color:white;
+    border: 1px solid rgb(1, 90, 90);
+    position: relative;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.sub-dress-item:hover {
+    background-color: rgb(1, 90, 90);
+}
+
+.sub-list-item:hover>.sub-dress-list {
+    display: block;
+}
